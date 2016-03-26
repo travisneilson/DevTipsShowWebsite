@@ -41,5 +41,3 @@ config.codekit
 _site/
 .sass-cache/
 .jekyll-metadata
-
-config.codekit
