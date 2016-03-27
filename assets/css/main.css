@@ -554,6 +554,10 @@ textarea {
   textarea:focus {
     outline: none; }
 
+input.needsfilled {
+  border-color: #FF851B !important;
+  color: #FF851B !important; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
