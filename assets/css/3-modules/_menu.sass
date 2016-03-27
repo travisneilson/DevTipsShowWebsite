@@ -1,0 +1,68 @@
+.menu-overlay
+  position: fixed
+  background-color: hsla(0,0%,0%,0.0)
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  pointer-events: none
+  transition: all 350ms ease-in-out
+
+.menu-plate
+  position: absolute
+  top: 0px
+  left: -400px
+  width: 300px
+  height: 100%
+  background: white
+  box-shadow: 3px 0px 30px rgba(0,0,0,0.4)
+  transition: all 350ms ease-in-out
+
+.menu-close
+  position: absolute
+  top: 28px
+  left: 30px
+  cursor: pointer
+
+.menu
+  margin: 0
+  list-style: none
+  margin-top: 88px
+  padding-left: 30px
+
+  li
+    margin-bottom: 30px
+
+  svg
+    vertical-align: middle
+    margin-right: 20px
+    fill: hsla(0,0%,0%,0.54)
+    width: 24px
+    height: 24px
+
+
+  a
+    border-bottom: none
+    text-transform: uppercase
+    //color: #000
+    font-weight: 500
+    font-size: 16px
+    display: inline-block
+    height: 24px
+    line-height: 24px
+
+
+
+// Is Open
+
+html.menu-open
+
+  body
+    overflow: hidden
+
+  .menu-overlay
+    background-color: hsla(0,0%,0%,0.7)
+    pointer-events: auto
+
+  .menu-plate
+    left: 0px

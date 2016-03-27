@@ -1,16 +1,14 @@
 $(function(){
 
   $('.jquerycourse-submit').on('click', function(){
-
     var $form = $(this).parents('form');
-
-    if(validate($form)) {
-      postContactToGoogle($form);
-    }
-
+    if(validate($form)) {  postContactToGoogle($form) }
     return false;
   });
 
+  $('.menu-close, .menu-svg').on('click', function(){
+    $('html').toggleClass('menu-open');
+  });
 
 });
 

@@ -705,6 +705,64 @@ section {
     text-transform: uppercase;
     font-size: 9px; }
 
+.menu-overlay {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out; }
+
+.menu-plate {
+  position: absolute;
+  top: 0px;
+  left: -400px;
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out; }
+
+.menu-close {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  cursor: pointer; }
+
+.menu {
+  margin: 0;
+  list-style: none;
+  margin-top: 88px;
+  padding-left: 30px; }
+  .menu li {
+    margin-bottom: 30px; }
+  .menu svg {
+    vertical-align: middle;
+    margin-right: 20px;
+    fill: rgba(0, 0, 0, 0.54);
+    width: 24px;
+    height: 24px; }
+  .menu a {
+    border-bottom: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px; }
+
+html.menu-open body {
+  overflow: hidden; }
+html.menu-open .menu-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: auto; }
+html.menu-open .menu-plate {
+  left: 0px; }
+
 .page-home .home-hero {
   padding: 0px 20px 40px; }
   .page-home .home-hero.desktop-layout {
