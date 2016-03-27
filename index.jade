@@ -1,14 +1,95 @@
-doctype html
-html(lang='en')
-  head
-    title DevTips Show
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='shortcut icon', href='assets/img/favicons/favicon.ico')
-    link(rel='stylesheet', href='assets/css/main.css')
-  body
+extends ./_layouts/_head.jade
+
+block vars
+  - var htmlClass = 'page-home';
+
+block content
+
+  section.home-hero
+    .flex-video-wrap
+      .flex-video <iframe src="https://www.youtube.com/embed/swcKGCX2Aos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    p.muted-extra(style="max-width: 300px") <span class="black">Video above:</span> I ask six talended creators what advice they would give their younger self.
+
+
+  section.home-hero.desktop-layout
+    .flex-container  
+      .flex-about-content
+        .section-head What is DevTips?
+        hr.section-title-rule
+        .media-object
+          .media
+            img.avatar(src="https://ci5.googleusercontent.com/proxy/AaZXsl9_ruMCGZrO6LVVcCg5qr82Ti86mO-hGHy2ioUj7wbkNJp5niE5p6GDGVfpb4Z9X3Am-dOK84ShwqK2vyO1x_GjxNbdYeB7QG5NHLAJawEloHQa_0wrRTnfTtOLYHTHJWiJnbbxyA7y07-zTqSxkSDjOt-HRj1Qow0=s0-d-e1-ft#https://gallery.mailchimp.com/2abae111d44df144b3b3986bc/images/cd92ba3c-ecf7-4268-b153-181559b6ea28.jpg")
+          .content
+            p DevTips is a <a href="">weekly YouTube show</a> that focuses on web development and design, the show is hosted by <a href="">Travis Neilson</a>.
     
-    h1 DevTips Starter Kit
+      
+      .flex-video-right
+        .flex-video-wrap
+          .flex-video <iframe src="https://www.youtube.com/embed/swcKGCX2Aos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        p.muted-extra(style="max-width: 300px") <span class="black">Video above:</span> I ask six talended creators what advice they would give their younger self.
+
+  
+
+  section.what-is-devtips.tint
+    .constrainer
+      .section-head What is DevTips?
+      hr.section-title-rule
+      .media-object
+        .media
+          img.avatar(src="https://ci5.googleusercontent.com/proxy/AaZXsl9_ruMCGZrO6LVVcCg5qr82Ti86mO-hGHy2ioUj7wbkNJp5niE5p6GDGVfpb4Z9X3Am-dOK84ShwqK2vyO1x_GjxNbdYeB7QG5NHLAJawEloHQa_0wrRTnfTtOLYHTHJWiJnbbxyA7y07-zTqSxkSDjOt-HRj1Qow0=s0-d-e1-ft#https://gallery.mailchimp.com/2abae111d44df144b3b3986bc/images/cd92ba3c-ecf7-4268-b153-181559b6ea28.jpg")
+        .content
+          p DevTips is a <a href="">weekly YouTube show</a> that focuses on web development and design, the show is hosted by <a href="">Travis Neilson</a>.
     
-    script(src='assets/js/jquery-2.2.2.min.js')
-    script(src='assets/js/functions.js', type='text/javascript')
+    
+  section.popular-episodes
+    .constrainer
+      .section-head Popular Episodes <span style="color: #F9EC31; font-style: italic; font-weight: 600;">Free!</span>
+      hr.section-title-rule
+      
+      ul.link-list.text-center
+        li: a(href="") How to Build a Responsive Website <br>From Start to Finish
+        li: a(href="") Parallax on the Web
+        li: a(href="") Advice and Crap for Young Creators
+        li: a(href="") CSS FlexBox Essentials
+        li: a(href="") Design + Code my Personal Website<br>in 12 hours
+        li: a(href="") My First Websites Were Horrible!
+
+
+  section.jquery-video-course
+    .constrainer.text-center
+      .section-head.white jQuery Video Course
+      hr.section-title-rule
+      
+      p.white Learn jQuery the DevTips way by coding real projects that you can use professionally.
+      
+      form
+        input(id="Name" type="text" placeholder="Name")
+        input(id="Email" type="text" placeholder="Email")
+        input(id="Submit" type="submit" value="Tell me when it's ready!")
+      
+      p.white This video course is still in development, so sign up to be notified of the launch!
+      p: a.white-hard(href="") Learn more about the course
+    
+    
+  section.patreon-community
+    .constrainer.text-center
+      .section-head Patreon Community
+      hr.section-title-rule
+      
+      .patreon-icons
+        .chat
+          include ./assets/img/icn/pat-chat.svg
+          p.muted-extra DevTips Chat
+        .vids
+          include ./assets/img/icn/pat-vids.svg
+          p.muted-extra Extra Videos
+        .hang
+          include ./assets/img/icn/pat-hang.svg
+          p.muted-extra hangouts
+        .pod
+          include ./assets/img/icn/pat-pod.svg
+          p.muted-extra DevTips Podcast
+      
+      p The <a href="https://www.patreon.com/DevTips">DevTips community</a> is a way for fans of the show to support the creative efforts involved.
+
+      p Of course, Patrons get awesome perks ;)

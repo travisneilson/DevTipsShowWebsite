@@ -1,0 +1,45 @@
+body
+  position: relative
+
+.top-rect
+  width: 100%
+  padding-top: 400px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  background-color: #F9EC31
+  overflow: hidden
+
+  &:after
+    content: ''
+    display: block
+    background: white
+    height: 400px
+    width: 3000px
+    position: absolute
+    z-index: 1
+    bottom: -50%
+    left: 50%
+    margin-left: -1500px
+    transform: rotate(-6deg)
+
+
+
+
+header
+  height: 80px
+  position: relative
+
+  .devtips-logo-svg
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-left: -25px
+    margin-top: -20px
+
+  .menu-svg
+    position: absolute
+    top: 28px
+    left: 30px
+    cursor: pointer

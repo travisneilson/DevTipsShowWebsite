@@ -1,7 +1,61 @@
-body
-  margin: 10px
-  background-color: $silver
-  overflow-x: hidden
-
 .page-home
-  text-align: center
+
+  .home-hero
+    padding: 0px 20px 40px
+
+    &.desktop-layout
+      display: none
+
+  @media (min-width: 830px)
+    .what-is-devtips
+      display: none
+
+    .top-rect
+      padding-top: 450px
+
+    .home-hero
+      display: none
+
+      &.desktop-layout
+        display: block
+
+      .flex-container
+        display: flex
+        max-width: 830px
+        margin: 0 auto
+
+      .flex-about-content
+        max-width: 300px
+        margin-right: 30px
+        flex-shrink: 0
+
+        .section-head
+          text-align: left
+
+        .section-title-rule
+          border-top-color: rgba(0,0,0,0.15)
+          margin: 10px 0px 30px
+
+      .flex-video-right
+        width: 100%
+
+
+  .jquery-video-course
+    background-color: #0067AF
+
+    .section-title-rule
+      border-top-color: rgba(255,255,255,0.3)
+
+    input[type="text"]
+      background-color: hsla(0,0%,100%,0.15)
+      border-color: white
+      color: white
+      text-transform: uppercase
+
+      &::placeholder
+        color: hsla(0,0%,100%,0.5)
+
+    input[type="submit"]
+      background: white
+      color: #0067AF
+      border-color: white

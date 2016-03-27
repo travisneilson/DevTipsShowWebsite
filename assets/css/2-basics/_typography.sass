@@ -4,6 +4,8 @@
 h1, h2, h3, h4, h5, h6
   color: #222
   font-weight: bold
+  margin: 0
+  margin-bottom: 20px
 
 .gigantic
   font-size: 110px
@@ -42,6 +44,7 @@ em
 
 strong
   font-weight: bold
+  color: hsla(0,0%,0%,0.9)
 
 hr
   border: solid #ddd
@@ -49,3 +52,63 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+
+  &.section-title-rule
+    border-top: 2px solid #F5E830
+    width: 100px
+    margin: 10px auto 30px
+
+    .tint-reversed &
+      border-top-color: hsla(0,0%,100%,0.2)
+
+
+// Project Type Styles
+
+.section-head
+  font:
+    size: 18px
+    //weight: 300
+  color: hsla(0,0%,0%,0.8)
+  text-align: center
+
+.lead
+  font:
+    size: 16px
+    weight: 400
+  color: hsla(0,0%,0%,0.8)
+
+.bold
+  font:
+    weight: 600
+
+.regular
+  font:
+    size: 14px
+    weight: 400
+  color: hsla(0,0%,0%,0.8)
+
+.muted
+  font:
+    size: 13px
+    style: italic
+
+.muted-extra
+  font:
+    size: 12px
+    weight: 400
+  color: hsla(0,0%,0%,0.5)
+
+.blue
+  color: #0067AF
+
+.black
+  color: hsla(0,0%,0%,1)
+
+.white
+  color: hsla(0,0%,100%,0.8)
+
+.white-hard
+  color: hsla(0,0%,100%,1)
+
+.text-center
+  text-align: center
