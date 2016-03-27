@@ -756,7 +756,8 @@ section {
     line-height: 24px; }
 
 html.menu-open body {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed; }
 html.menu-open .menu-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   pointer-events: auto; }
