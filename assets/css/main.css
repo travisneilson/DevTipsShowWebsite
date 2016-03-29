@@ -749,38 +749,48 @@ html.menu-open .menu-plate {
           transform: translate3d(400px, 0px, 0px); }
 
 .page-home .home-hero {
-  padding: 0px 20px 40px; }
-  .page-home .home-hero.desktop-layout {
+  padding: 20px 20px 40px; }
+  .page-home .home-hero .mission {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 300px; }
+  .page-home .home-hero .section-title-rule {
+    border-top-color: rgba(0, 0, 0, 0.15);
+    margin: 0px 0px 30px;
     display: none; }
+    .page-home .home-hero .section-title-rule.bottom {
+      display: block;
+      margin: 10px 0px 30px; }
+.page-home .top-rect {
+  padding-top: 500px; }
 @media (min-width: 830px) {
-  .page-home .what-is-devtips {
-    display: none; }
-  .page-home .top-rect {
-    padding-top: 450px; }
-  .page-home .home-hero {
-    display: none; }
-    .page-home .home-hero.desktop-layout {
+  .page-home .home-hero .mission {
+    font-size: 28px;
+    line-height: 1.38; }
+  .page-home .home-hero .section-title-rule {
+    display: block; }
+  .page-home .home-hero .flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 830px;
+    margin: 0 auto; }
+  .page-home .home-hero .flex-about-content {
+    max-width: 300px;
+    margin-right: 30px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+    .page-home .home-hero .flex-about-content .section-head {
+      text-align: left; }
+    .page-home .home-hero .flex-about-content .section-title-rule {
       display: block; }
-    .page-home .home-hero .flex-container {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      max-width: 830px;
-      margin: 0 auto; }
-    .page-home .home-hero .flex-about-content {
-      max-width: 300px;
-      margin-right: 30px;
-      -webkit-flex-shrink: 0;
-          -ms-flex-negative: 0;
-              flex-shrink: 0; }
-      .page-home .home-hero .flex-about-content .section-head {
-        text-align: left; }
-      .page-home .home-hero .flex-about-content .section-title-rule {
-        border-top-color: rgba(0, 0, 0, 0.15);
-        margin: 10px 0px 30px; }
-    .page-home .home-hero .flex-video-right {
-      width: 100%; } }
+      .page-home .home-hero .flex-about-content .section-title-rule.bottom {
+        display: none; }
+  .page-home .home-hero .flex-video-right {
+    width: 100%; } }
 .page-home .jquery-video-course {
   background-color: #0067AF; }
   .page-home .jquery-video-course .section-title-rule {
@@ -802,6 +812,38 @@ html.menu-open .menu-plate {
     background: white;
     color: #0067AF;
     border-color: white; }
+.page-home .quote {
+  text-align: center;
+  background: #f5f5f5; }
+  .page-home .quote > div {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 300;
+    max-width: 600px;
+    padding: 0 20px; }
+    .page-home .quote > div span {
+      font-weight: 400; }
+    .page-home .quote > div cite {
+      display: block;
+      text-align: right;
+      font-size: 14px; }
+.page-home .popular-episodes li:nth-child(even) .media {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0 0 0 20px; }
+.page-home .popular-episodes li:nth-child(even) .content {
+  text-align: right; }
+.page-home .popular-episodes .media {
+  max-width: 175px; }
+  .page-home .popular-episodes .media img {
+    max-width: 100%; }
+.page-home .popular-episodes .content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .page-jquerycourse .top-rect {
   background-color: #0067AF;

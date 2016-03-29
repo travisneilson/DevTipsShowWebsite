@@ -1,22 +1,40 @@
 .page-home
 
   .home-hero
-    padding: 0px 20px 40px
+    padding: 20px 20px 40px
 
-    &.desktop-layout
+    .mission
+      font:
+        size: 21px
+        weight: 400
+      margin-bottom: 20px
+      max-width: 300px
+
+    .section-title-rule
+      border-top-color: rgba(0,0,0,0.15)
+      margin: 0px 0px 30px
       display: none
+
+      &.bottom
+        display: block
+        margin: 10px 0px 30px
+
+  .top-rect
+    padding-top: 500px
+
 
   @media (min-width: 830px)
-    .what-is-devtips
-      display: none
 
     .top-rect
-      padding-top: 450px
+      //padding-top: 480px
 
     .home-hero
-      display: none
 
-      &.desktop-layout
+      .mission
+        font-size: 28px
+        line-height: 1.38
+
+      .section-title-rule
         display: block
 
       .flex-container
@@ -33,8 +51,10 @@
           text-align: left
 
         .section-title-rule
-          border-top-color: rgba(0,0,0,0.15)
-          margin: 10px 0px 30px
+          display: block
+
+          &.bottom
+            display: none
 
       .flex-video-right
         width: 100%
@@ -59,3 +79,39 @@
       background: white
       color: #0067AF
       border-color: white
+
+  .quote
+    text-align: center
+    background: #f5f5f5
+
+    > div
+      display: inline-block
+      font-size: 24px
+      font-weight: 300
+      max-width: 600px
+      padding: 0 20px
+
+      span
+        font-weight: 400
+
+      cite
+        display: block
+        text-align: right
+        font-size: 14px
+
+  .popular-episodes
+    li:nth-child(even)
+      .media
+        order: 1
+        margin: 0 0 0 20px
+
+      .content
+        text-align: right
+
+    .media
+      max-width: 175px
+      img
+        max-width: 100%
+
+    .content
+      flex-grow: 1
