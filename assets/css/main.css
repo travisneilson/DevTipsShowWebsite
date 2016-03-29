@@ -821,3 +821,18 @@ html.menu-open .menu-plate {
   fill: rgba(0, 0, 0, 0.54); }
 .page-jquerycourse header {
   margin-bottom: 30px; }
+
+.page-gifs .top-rect {
+  background-color: #FF4136;
+  padding-top: 330px; }
+.page-gifs header .menu-svg {
+  fill: white; }
+.page-gifs .devtips-logo-svg path {
+  fill: white; }
+.page-gifs .gif {
+  display: inline-block;
+  max-height: 100px;
+  margin: 1px; }
+.page-gifs .gif-cluster {
+  padding: 0 20px;
+  font-size: 0px; }

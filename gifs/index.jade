@@ -1,0 +1,18 @@
+extends ../_layouts/_head.jade
+
+block vars
+  - var htmlClass = 'page-gifs';
+
+block content
+
+  section.gif-hero
+    .text-center
+      .constrainer
+        .section-head DevTips GIFs!
+        hr.section-title-rule(style="border-top-color: #FF4136;")
+        
+        p.lead These images were all created and passed around inside the DevTips Chat. I'm placing them here so you can use them to make the internet weird.
+      
+      .gif-cluster
+        img.gif(src="/gifs/blow.gif")
+        img.gif(src="/gifs/pinch.gif")

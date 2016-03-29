@@ -345,6 +345,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/assets\/css\/4-pages\/_page-gifs.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/4-pages\/_page-gifs.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/css\/_page-gifs.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/assets\/css\/4-pages\/_page-home.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -423,6 +439,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/gifs\/index.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gifs\/index.jade",
+		"outputAbbreviatedPath": "\/gifs\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
