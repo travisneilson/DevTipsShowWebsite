@@ -745,7 +745,8 @@ html.menu-open .menu-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   pointer-events: auto; }
 html.menu-open .menu-plate {
-  left: 0px; }
+  -webkit-transform: translate3d(400px, 0px, 0px);
+          transform: translate3d(400px, 0px, 0px); }
 
 .page-home .home-hero {
   padding: 0px 20px 40px; }
@@ -835,4 +836,8 @@ html.menu-open .menu-plate {
   margin: 1px; }
 .page-gifs .gif-cluster {
   padding: 0 20px;
-  font-size: 0px; }
+  font-size: 0px;
+  max-width: 800px;
+  margin: 0 auto; }
+  .page-gifs .gif-cluster a {
+    border: none; }
