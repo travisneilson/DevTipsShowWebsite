@@ -571,12 +571,12 @@ body {
     display: block;
     background: white;
     height: 400px;
-    width: 3000px;
+    width: 8000px;
     position: absolute;
     z-index: 1;
     bottom: -50%;
     left: 50%;
-    margin-left: -1500px;
+    margin-left: -4000px;
     -webkit-transform: rotate(-6deg);
             transform: rotate(-6deg); }
 
