@@ -6,23 +6,13 @@ block vars
 block content
 
   section.home-hero
-    .flex-video-wrap
-      .flex-video <iframe src="https://www.youtube.com/embed/swcKGCX2Aos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    p.muted-extra(style="max-width: 300px") <span class="black">Video above:</span> I ask six talented creators what advice they would give their younger selves.
-
-
-  section.home-hero.desktop-layout
     .flex-container  
       .flex-about-content
-        .section-head What is DevTips?
         hr.section-title-rule
-        .media-object
-          .media
-            img.avatar(src="https://ci5.googleusercontent.com/proxy/AaZXsl9_ruMCGZrO6LVVcCg5qr82Ti86mO-hGHy2ioUj7wbkNJp5niE5p6GDGVfpb4Z9X3Am-dOK84ShwqK2vyO1x_GjxNbdYeB7QG5NHLAJawEloHQa_0wrRTnfTtOLYHTHJWiJnbbxyA7y07-zTqSxkSDjOt-HRj1Qow0=s0-d-e1-ft#https://gallery.mailchimp.com/2abae111d44df144b3b3986bc/images/cd92ba3c-ecf7-4268-b153-181559b6ea28.jpg")
-          .content
-            p DevTips is a <a href="https://www.youtube.com/user/DevTipsForDesigners">weekly YouTube show</a> that focuses on web development and design, the show is hosted by <a href="http://travisneilson.com">Travis Neilson</a>.
-    
-      
+        .mission The tools and experiences to change your circumstances and be in control of your own future.
+        hr.section-title-rule.bottom
+        
+        
       .flex-video-right
         .flex-video-wrap
           .flex-video <iframe src="https://www.youtube.com/embed/swcKGCX2Aos?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -38,7 +28,7 @@ block content
         .media
           img.avatar(src="https://ci5.googleusercontent.com/proxy/AaZXsl9_ruMCGZrO6LVVcCg5qr82Ti86mO-hGHy2ioUj7wbkNJp5niE5p6GDGVfpb4Z9X3Am-dOK84ShwqK2vyO1x_GjxNbdYeB7QG5NHLAJawEloHQa_0wrRTnfTtOLYHTHJWiJnbbxyA7y07-zTqSxkSDjOt-HRj1Qow0=s0-d-e1-ft#https://gallery.mailchimp.com/2abae111d44df144b3b3986bc/images/cd92ba3c-ecf7-4268-b153-181559b6ea28.jpg")
         .content
-          p DevTips is a <a href="https://www.youtube.com/user/DevTipsForDesigners">weekly YouTube show</a> that focuses on web development and design, the show is hosted by <a href="http://travisneilson.com">Travis Neilson</a>.
+          p DevTips is a <a href="https://www.youtube.com/user/DevTipsForDesigners">weekly YouTube show</a> that focuses on web development and design, hosted by <a href="http://travisneilson.com">Travis Neilson</a>.
     
     
   section.popular-episodes
@@ -46,13 +36,36 @@ block content
       .section-head Popular Episodes <span style="color: #F9EC31; font-style: italic; font-weight: 600;">Free!</span>
       hr.section-title-rule
       
-      ul.link-list.text-center
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI") How to Build a Responsive Website <br>From Start to Finish
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk") Parallax on the Web
-        li: a(href="https://www.youtube.com/watch?v=OFDAGiPJHL8") Advice and Crap for Young Creators
-        li: a(href="https://www.youtube.com/watch?v=G7EIAgfkhmg") CSS FlexBox Essentials
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A") Design + Code my Personal Website<br>in 12 hours
-        li: a(href="https://www.youtube.com/watch?v=QLbUzwxkwHA") My First Websites Were Horrible!
+      ul.link-list
+        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/VcMjo_wczCc/mqdefault.jpg")
+          .content How to Build a Responsive Website <br>From Start to Finish
+            
+        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/STwoa-9jxi0/mqdefault.jpg")
+          .content Parallax on the Web
+          
+        li: a(href="https://www.youtube.com/watch?v=OFDAGiPJHL8").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/OFDAGiPJHL8/mqdefault.jpg")
+          .content Advice and Crap for Young Creators
+            
+        li: a(href="https://www.youtube.com/watch?v=G7EIAgfkhmg").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/G7EIAgfkhmg/mqdefault.jpg")
+          .content CSS FlexBox Essentials
+            
+        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/sJhhLvW-Xvg/mqdefault.jpg")
+          .content Design + Code my Personal Website<br>in 12 hours
+            
+        li: a(href="https://www.youtube.com/watch?v=QLbUzwxkwHA").media-object
+          .media
+            img(src="https://i.ytimg.com/vi/QLbUzwxkwHA/mqdefault.jpg")
+          .content My First Websites Were Horrible!
 
 
   section.jquery-video-course
@@ -90,3 +103,8 @@ block content
       p The <a href="https://www.patreon.com/DevTips">DevTips community</a> is a way for fans of the show to support the creative efforts involved.
 
       p Of course, Patrons get awesome perks ;)
+  
+  //section.quote 
+    div You can deal with anything today<br>if you have a compelling future<cite>— Tony Robbins</cite>
+  section.quote
+    div <span>DevTips Mission:</span> educate, inspire, and uplift anyone willing to engage; whoever wherever, however possible.
