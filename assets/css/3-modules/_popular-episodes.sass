@@ -1,0 +1,71 @@
+.popular-episodes
+  padding-top: 0
+
+  .arc-svg
+    margin-top: -1px
+    path
+      fill: white
+
+  @media (min-width: 830px)
+    .constrainer
+      max-width: 540px
+
+.popular-list
+
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
+  .video-unit
+    max-width: calc(50% - 24px)
+    float: left
+    margin-bottom: 20px
+    //border: solid 1px #ddd
+    border: none
+    border-radius: 3px
+    padding: 5px
+    background: white
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3)
+    transition: all ease-in-out 200ms
+
+    &:nth-child(odd)
+      margin-right: 20px
+
+    &:hover
+      box-shadow: 0px 5px 30px rgba(0,0,0,0.3)
+
+  .desc
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 75px
+
+  .title
+    font-weight: 500
+    line-height: 1.3
+
+  img
+    max-width: 100%
+    display: block
+    margin-bottom: 5px
+
+  @media (min-width: 830px)
+    .video-unit
+      max-width: calc(37.1% - 46px)
+      margin-right: 20px
+
+      &:nth-child(3n)
+        margin-right: 0
+
+  @media(max-width: 370px)
+    .video-unit
+      max-width: 220px
+      margin-right: auto !important
+      margin: 0px auto 20px !important
+      box-sizing: border-box
+      float: none
+      display: block

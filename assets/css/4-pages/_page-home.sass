@@ -25,9 +25,6 @@
 
   @media (min-width: 830px)
 
-    .top-rect
-      //padding-top: 480px
-
     .home-hero
 
       .mission
@@ -100,18 +97,22 @@
         font-size: 14px
 
   .popular-episodes
-    li:nth-child(even)
-      .media
-        order: 1
-        margin: 0 0 0 20px
 
-      .content
-        text-align: right
+    .section-head span
+      font-style: italic
+      font-weight: 400
+      display: inline-block
+      position: relative
+      z-index: 1
 
-    .media
-      max-width: 175px
-      img
-        max-width: 100%
-
-    .content
-      flex-grow: 1
+      &:after
+        content: ''
+        display: block
+        background: fade-out(#F9EC31, 0.7)
+        height: 30px
+        width: 50px
+        z-index: 0
+        position: absolute
+        top: 0px
+        left: -5px
+        transform: rotate(24deg) skewY(-24deg)

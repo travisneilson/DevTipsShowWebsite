@@ -1,0 +1,51 @@
+mixin popular-episode(url, img, title, count, duration)
+  a(href="#{url}").video-unit
+    .media
+      img(src="#{img}")
+    .desc 
+      .title #{title}
+      .muted-extra.meta #{count} &bull; #{duration}
+    
+    
+.popular-list
+  +popular-episode(
+    'https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI',
+    'https://i.ytimg.com/vi/VcMjo_wczCc/mqdefault.jpg',
+    'How to Build a Responsive Website from Start to Finish',
+    '26 videos',
+    '10hrs 46min')
+  
+  +popular-episode(
+    'https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk',
+    'https://i.ytimg.com/vi/STwoa-9jxi0/mqdefault.jpg',
+    'Parallax on the Web',
+    '10 videos',
+    '3hrs 7min')
+  
+  +popular-episode(
+    'https://www.youtube.com/watch?v=OFDAGiPJHL8',
+    'https://i.ytimg.com/vi/OFDAGiPJHL8/mqdefault.jpg',
+    'Advice and Crap for Young Creators',
+    '1 video',
+    '8min')
+    
+  +popular-episode(
+    'https://www.youtube.com/watch?v=G7EIAgfkhmg',
+    'https://i.ytimg.com/vi/G7EIAgfkhmg/mqdefault.jpg',
+    'CSS FlexBox Essentials',
+    '2 videos',
+    '1hr 6 min')
+    
+  +popular-episode(
+    'https://www.youtube.com/playlist?list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A',
+    'https://i.ytimg.com/vi/sJhhLvW-Xvg/mqdefault.jpg',
+    'Design + Code my Personal Website in 12 hours',
+    '28 videos',
+    '12hrs 31 min')
+    
+  +popular-episode(
+    'https://www.youtube.com/watch?v=QLbUzwxkwHA',
+    'https://i.ytimg.com/vi/QLbUzwxkwHA/mqdefault.jpg',
+    'My First Websites Were Horrible!',
+    '1 video',
+    '18min')

@@ -9,7 +9,7 @@ block content
     .flex-container  
       .flex-about-content
         hr.section-title-rule
-        .mission The tools and experiences to change your circumstances and be in control of your own future.
+        .mission The education and training to change your circumstances and be in control of your future.
         hr.section-title-rule.bottom
         
         
@@ -20,7 +20,7 @@ block content
 
   
 
-  section.what-is-devtips.tint
+  section.what-is-devtips
     .constrainer
       .section-head What is DevTips?
       hr.section-title-rule
@@ -31,41 +31,13 @@ block content
           p DevTips is a <a href="https://www.youtube.com/user/DevTipsForDesigners">weekly YouTube show</a> that focuses on web development and design, hosted by <a href="http://travisneilson.com">Travis Neilson</a>.
     
     
-  section.popular-episodes
+  section.popular-episodes.tint
+    include ./assets/img/arc.svg
     .constrainer
-      .section-head Popular Episodes <span style="color: #F9EC31; font-style: italic; font-weight: 600;">Free!</span>
+      .section-head Popular Videos <span>Free!</span>
       hr.section-title-rule
       
-      ul.link-list
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/VcMjo_wczCc/mqdefault.jpg")
-          .content How to Build a Responsive Website <br>From Start to Finish
-            
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/STwoa-9jxi0/mqdefault.jpg")
-          .content Parallax on the Web
-          
-        li: a(href="https://www.youtube.com/watch?v=OFDAGiPJHL8").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/OFDAGiPJHL8/mqdefault.jpg")
-          .content Advice and Crap for Young Creators
-            
-        li: a(href="https://www.youtube.com/watch?v=G7EIAgfkhmg").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/G7EIAgfkhmg/mqdefault.jpg")
-          .content CSS FlexBox Essentials
-            
-        li: a(href="https://www.youtube.com/playlist?list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/sJhhLvW-Xvg/mqdefault.jpg")
-          .content Design + Code my Personal Website<br>in 12 hours
-            
-        li: a(href="https://www.youtube.com/watch?v=QLbUzwxkwHA").media-object
-          .media
-            img(src="https://i.ytimg.com/vi/QLbUzwxkwHA/mqdefault.jpg")
-          .content My First Websites Were Horrible!
+      include ./_includes/_popular-episodes.jade
 
 
   section.jquery-video-course

@@ -748,6 +748,74 @@ html.menu-open .menu-plate {
   -webkit-transform: translate3d(400px, 0px, 0px);
           transform: translate3d(400px, 0px, 0px); }
 
+.popular-episodes {
+  padding-top: 0; }
+  .popular-episodes .arc-svg {
+    margin-top: -1px; }
+    .popular-episodes .arc-svg path {
+      fill: white; }
+  @media (min-width: 830px) {
+    .popular-episodes .constrainer {
+      max-width: 540px; } }
+
+.popular-list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+.popular-list .video-unit {
+  max-width: calc(50% - 24px);
+  float: left;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+  .popular-list .video-unit:nth-child(odd) {
+    margin-right: 20px; }
+  .popular-list .video-unit:hover {
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3); }
+.popular-list .desc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px; }
+.popular-list .title {
+  font-weight: 500;
+  line-height: 1.3; }
+.popular-list img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 5px; }
+@media (min-width: 830px) {
+  .popular-list .video-unit {
+    max-width: calc(37.1% - 46px);
+    margin-right: 20px; }
+    .popular-list .video-unit:nth-child(3n) {
+      margin-right: 0; } }
+@media(max-width: 370px) {
+  .popular-list .video-unit {
+    max-width: 220px;
+    margin-right: auto !important;
+    margin: 0px auto 20px !important;
+    box-sizing: border-box;
+    float: none;
+    display: block; } }
 .page-home .home-hero {
   padding: 20px 20px 40px; }
   .page-home .home-hero .mission {
@@ -827,23 +895,24 @@ html.menu-open .menu-plate {
       display: block;
       text-align: right;
       font-size: 14px; }
-.page-home .popular-episodes li:nth-child(even) .media {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-  margin: 0 0 0 20px; }
-.page-home .popular-episodes li:nth-child(even) .content {
-  text-align: right; }
-.page-home .popular-episodes .media {
-  max-width: 175px; }
-  .page-home .popular-episodes .media img {
-    max-width: 100%; }
-.page-home .popular-episodes .content {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+.page-home .popular-episodes .section-head span {
+  font-style: italic;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  z-index: 1; }
+  .page-home .popular-episodes .section-head span:after {
+    content: "";
+    display: block;
+    background: rgba(249, 236, 49, 0.3);
+    height: 30px;
+    width: 50px;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    -webkit-transform: rotate(24deg) skewY(-24deg);
+            transform: rotate(24deg) skewY(-24deg); }
 
 .page-jquerycourse .top-rect {
   background-color: #0067AF;
