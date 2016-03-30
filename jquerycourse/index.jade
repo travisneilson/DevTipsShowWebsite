@@ -7,19 +7,25 @@ block content
 
   section.jquery-hero
     .constrainer.text-center
-      .section-head jQuery Video Course
-      hr.section-title-rule(style="border-top-color: #0067AF;")
       
-      p.lead Learn jQuery the DevTips way by coding real projects that you can use professionally.
+      .section-head jQuery Video Course
+      
+      //hr.section-title-rule(style="border-top-color: #0067AF;")
+      //.bigger(style="margin-bottom: 40px") Have fun, win new clients, and expand your ability to create functional and stunning websites.
+      
+      
+      //p.lead Learn jQuery the DevTips way by coding real projects that you can use professionally.
       
       .jquery-icon
         include ../assets/img/icn/ic_jquery.svg
-      
+      .bigger Learn jQuery the DevTips way by coding real projects that you can use professionally.
       p.lead Get notified when the courses are ready!
       
       include ../_includes/_jquerycourse-form.jade
       
-      p In this series of <strong>clearly explained</strong>, easy to understand videos, YouTuber Travis Neilson walks you through creating several <strong>professional grade projects</strong>, step by step, that you can use to impress your boss, <strong>win new clients</strong>, and expand your ability to create <strong>functional and stunning</strong> websites.
+      .spacer(style="height: 20px")
+      
+      p.lead In this series of <strong>clearly explained</strong>, easy to understand videos, YouTuber Travis Neilson walks you through creating several <strong>professional grade projects</strong>, step by step, that you can use to impress your boss, <strong>win new clients</strong>, and expand your ability to create <strong>functional and stunning websites.</strong>
       
   section.projects-include.tint
     .constrainer
@@ -51,9 +57,10 @@ block content
       p.lead Learn the basics of jQuery in only 15&nbsp;minutes right now <span style="color: #0067AF">for free!</span>
       
       a(href="https://youtu.be/LcjXZTeulR4").video-cascade
-        img(src="https://i.ytimg.com/vi/gHgjVle4-h0/mqdefault.jpg")
-        img(src="https://i.ytimg.com/vi/hPC6keUUiTA/mqdefault.jpg")
-        img(src="https://i.ytimg.com/vi/3TWQgEO4Jo8/mqdefault.jpg")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/gHgjVle4-h0/mqdefault.jpg);")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/hPC6keUUiTA/mqdefault.jpg);")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/3TWQgEO4Jo8/mqdefault.jpg);")
+          include ../assets/img/icn/ic_play_circle_filled.svg
         
       p.muted Get started with <a href="https://youtu.be/LcjXZTeulR4">three free 5 minute lessons</a> that cover the basics of jQuery.
       p.muted A perfect way to get ready for the courses, and get comfortable with learning the DevTips way.
