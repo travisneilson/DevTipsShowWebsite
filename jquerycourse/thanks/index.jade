@@ -15,9 +15,10 @@ block content
       p.lead Learn the basics of jQuery in only 15&nbsp;minutes right now <span style="color: #0067AF">for free!</span>
       
       a(href="https://youtu.be/LcjXZTeulR4").video-cascade
-        img(src="https://i.ytimg.com/vi/gHgjVle4-h0/mqdefault.jpg")
-        img(src="https://i.ytimg.com/vi/hPC6keUUiTA/mqdefault.jpg")
-        img(src="https://i.ytimg.com/vi/3TWQgEO4Jo8/mqdefault.jpg")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/gHgjVle4-h0/mqdefault.jpg);")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/hPC6keUUiTA/mqdefault.jpg);")
+        .video-thumbnail(style="background-image: url(https://i.ytimg.com/vi/3TWQgEO4Jo8/mqdefault.jpg);")
+          include ../../assets/img/icn/ic_play_circle_filled.svg
         
       p.muted Get started with <a href="https://youtu.be/LcjXZTeulR4">three free 5 minute lessons</a> that cover the basics of jQuery.
       p.muted A perfect way to get ready for the courses, and get comfortable with learning the DevTips way.

@@ -11,11 +11,11 @@ $(function(){
     e.stopPropagation();
   });
 
-  $('.menu-close, .menu-svg, .menu-overlay').on('click', function(){
+  $('.menu-close, header .menu-svg, .menu-overlay').on('click', function(){
     $('html').toggleClass('menu-open');
   });
 
-  
+
 });
 
 function postContactToGoogle(f) {
