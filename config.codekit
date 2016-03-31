@@ -445,6 +445,39 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/assets\/img\/learnjquery-cover1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57487,
+		"inputAbbreviatedPath": "\/assets\/img\/learnjquery-cover1.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/learnjquery-cover1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/learnjquery-cover2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58976,
+		"inputAbbreviatedPath": "\/assets\/img\/learnjquery-cover2.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/learnjquery-cover2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/learnjquery-cover3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 499521,
+		"inputAbbreviatedPath": "\/assets\/img\/learnjquery-cover3.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/learnjquery-cover3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/functions.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -526,6 +559,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/jquerycourse\/thanks\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jquerycourse\/thanks\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/jquerycourse\/thanks\/index.jade": {
 		"compileDebug": 1,
