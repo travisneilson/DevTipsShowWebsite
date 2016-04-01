@@ -1,11 +1,5 @@
-form(action="#" id="ss-form" class="jquerycourse-form" target="_self" onsubmit="")
-  input(id="entry_1037433727" class="jquerycourse-name" type="text" name="entry.1037433727" value="" class="ss-q-short" dir="auto" aria-label="Name  " title="" placeholder="Name")
-  input(id="entry_1282118087" class="jquerycourse-email" type="text" name="entry.1282118087" value="" class="ss-q-short" dir="auto" aria-label="Email Address  " title="" placeholder="Email")
-  input(type="hidden" name="draftResponse" value="[,,&quot;5337177330839342757&quot;]")
-  input(type="hidden" name="pageHistory" value="0")
-  input(type="hidden" name="fvv" value="0")
-  input(type="hidden" name="fbzx" value="5337177330839342757")
-  
-  
-  
-  input(id="Submit" class="jquerycourse-submit" type="submit" name="submit" value="Tell me when it's ready!")
+form.jquerycourse-form(action='https://gumroad.com/follow_from_embed_form', method='post')
+  input(name='seller_id', type='hidden', value='2449985483245')
+  input(name='email', placeholder='Enter your email', type='email' id="email")
+  div
+    button(data-custom-highlight-color='', type='submit' class="jquerycourse-submit") Tell me when it's ready!
