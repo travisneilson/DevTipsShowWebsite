@@ -1,10 +1,10 @@
 $(function(){
 
-  $('.jquerycourse-submit').on('click', function(){
-    var $form = $(this).parents('form');
-    if(validate($form)) {  postContactToGoogle($form) }
-    return false;
-  });
+  // $('.jquerycourse-submit').on('click', function(){
+  //   var $form = $(this).parents('form');
+  //   if(validate($form)) {  postContactToGoogle($form) }
+  //   return false;
+  // });
 
 
   $('.menu-plate').on('click', function(e){
@@ -20,14 +20,12 @@ $(function(){
 
 function postContactToGoogle(f) {
 
-  var email = f.find('.jquerycourse-email').val();
-  var name = f.find('.jquerycourse-name').val();
+  var email = f.find('#email').val();
 
   $.ajax({
-    url: "https://docs.google.com/forms/d/1SIdmKl-BQDU1xJXvTi4hCecQRMJj32VzCMRAa12RQK0/formResponse",
+    url: "https://gumroad.com/follow_from_embed_form",
     data: {
-      "entry_1282118087": email,
-      "entry_1037433727": name
+      "2449985483245": email
     },
     type: "POST",
     dataType: "xml",
@@ -46,9 +44,9 @@ function postContactToGoogle(f) {
 function validate(f) {
 
     // Place ID's of all required fields here.
-    var required = ["entry_1037433727", "entry_1282118087"];
+    var required = ["email"];
     // If using an ID other than #email or #error then replace it here
-    var email = f.find('.jquerycourse-email');
+    //var email = f.find('.jquerycourse-email');
     var errornotice = $("#error");
     // The text to show up within a field when it is incorrect
     var emptyerror = "Please type your name.";
