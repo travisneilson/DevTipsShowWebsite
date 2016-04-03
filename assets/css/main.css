@@ -772,7 +772,7 @@ section {
   .menu li {
     margin-bottom: 30px; }
   .menu svg {
-    vertical-align: middle;
+    vertical-align: top;
     margin-right: 20px;
     fill: rgba(0, 0, 0, 0.54);
     width: 24px;
@@ -785,6 +785,12 @@ section {
     display: inline-block;
     height: 24px;
     line-height: 24px; }
+  .menu .double-line {
+    display: inline-block; }
+    .menu .double-line span {
+      display: block;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.3); }
 
 html.menu-open body {
   overflow: hidden;
@@ -979,10 +985,14 @@ html.menu-open .menu-plate {
             transform: rotate(24deg) skewY(-24deg); }
 
 .page-jquerycourse .top-rect {
-  background-color: #0067AF;
-  padding-top: 330px; }
+  background-color: #ff005b;
+  padding-top: 330px;
+  padding-top: 500px; }
+  @media (max-width: 550px) {
+    .page-jquerycourse .top-rect {
+      padding-top: 400px; } }
 .page-jquerycourse .jquery-hero .jquery-icon-svg path {
-  fill: #0868AC; }
+  fill: #ff005b; }
 .page-jquerycourse header .menu-svg {
   fill: white; }
 .page-jquerycourse .devtips-logo-svg path {
@@ -991,17 +1001,29 @@ html.menu-open .menu-plate {
   margin: 20px 0; }
 .page-jquerycourse input[type="text"],
 .page-jquerycourse input[type="email"] {
-  border-color: #0067AF;
+  border-color: #ff005b;
   text-align: center; }
 .page-jquerycourse input[type="submit"],
 .page-jquerycourse button {
-  background-color: #0067AF;
+  background-color: #ff005b;
   color: white;
-  border-color: #0067AF; }
+  border-color: #ff005b; }
 .page-jquerycourse .projects-include svg {
   fill: rgba(0, 0, 0, 0.54); }
 .page-jquerycourse header {
   margin-bottom: 30px; }
+.page-jquerycourse .jquery-promo-video {
+  max-width: 70%;
+  margin: 0px auto; }
+  @media (max-width: 550px) {
+    .page-jquerycourse .jquery-promo-video {
+      max-width: 100%;
+      padding: 0px 15px; } }
+  @media (min-width: 1200px) {
+    .page-jquerycourse .jquery-promo-video {
+      max-width: 850px; } }
+  .page-jquerycourse .jquery-promo-video .flex-video {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); }
 
 .page-gifs .top-rect {
   background-color: #FF4136;

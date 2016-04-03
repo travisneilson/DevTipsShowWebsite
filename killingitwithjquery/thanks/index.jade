@@ -1,0 +1,48 @@
+extends ../../_layouts/_head.jade
+
+block vars
+  - var htmlClass = 'page-jquerycourse';
+
+block content
+
+  section.jquery-hero
+    .constrainer.text-center
+      .blue.bigger Thank you for signing up to be notified when the course is ready!
+
+      
+  section.15-minute-videos-promo.tint
+    .constrainer.text-center
+      p.lead The course is still being developed, but in the mean time, learn the basics of jQuery in only 15&nbsp;minutes right now <span style="color: #0067AF">for free!</span>
+      
+      a(href="https://youtu.be/LcjXZTeulR4").video-cascade
+        .video-thumbnail(style="background-image: url(/assets/img/learnjquery-cover3.jpg);")
+        .video-thumbnail(style="background-image: url(/assets/img/learnjquery-cover2.jpg);")
+        .video-thumbnail(style="background-image: url(/assets/img/learnjquery-cover1.jpg);")
+          include ../../assets/img/icn/ic_play_circle_filled.svg
+        
+      p.muted Get started with <a href="https://youtu.be/LcjXZTeulR4">three free 5 minute lessons</a> that cover the basics of jQuery.
+      p.muted A perfect way to get ready for the courses, and get comfortable with learning the DevTips way.
+      
+      
+  section.patreon-community
+    .constrainer.text-center
+      .section-head Patreon Community
+      hr.section-title-rule
+      
+      .patreon-icons
+        .chat
+          include ../../assets/img/icn/pat-chat.svg
+          p.muted-extra DevTips Chat
+        .vids
+          include ../../assets/img/icn/pat-vids.svg
+          p.muted-extra Extra Videos
+        .hang
+          include ../../assets/img/icn/pat-hang.svg
+          p.muted-extra hangouts
+        .pod
+          include ../../assets/img/icn/pat-pod.svg
+          p.muted-extra DevTips Podcast
+      
+      p The <a href="https://www.patreon.com/DevTips">DevTips community</a> is a way for fans of the show to support the creative efforts involved.
+
+      p Of course, Patrons get awesome perks ;)
