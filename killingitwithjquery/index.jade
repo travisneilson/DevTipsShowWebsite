@@ -9,7 +9,7 @@ block content
   section.jquery-hero
     
     .jquery-promo-video
-      .flex-video <iframe src="https://www.youtube.com/embed/FNq75qFIBFs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      .flex-video <iframe src="http://www.youtube.com/embed/FNq75qFIBFs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     
     .constrainer.text-center
       
@@ -30,7 +30,16 @@ block content
       .spacer(style="height: 20px")
       
       p.lead In this series of <strong>clearly explained</strong>, easy to understand videos, YouTuber Travis Neilson walks you through creating several <strong>professional grade projects</strong>, step by step, that you can use to impress your boss, <strong>win new clients</strong>, and expand your ability to create <strong>functional and stunning websites.</strong>
-      
+  
+  section.testimonials
+    .constrainer
+      .lead.carousel-nav-wrap People like you are hyped
+        .carousel-nav
+          include ../assets/img/icn/ic_arrow_left.svg
+          include ../assets/img/icn/ic_arrow_right.svg
+          
+      include ../_includes/_testimonial-carousel.jade
+  
   section.projects-include.tint
     .constrainer
       p.lead Projects include:

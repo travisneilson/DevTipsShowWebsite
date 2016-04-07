@@ -1,12 +1,11 @@
 $(function(){
 
-  // $('.jquerycourse-submit').on('click', function(){
-  //   var $form = $(this).parents('form');
-  //   if(validate($form)) {  postContactToGoogle($form) }
-  //   return false;
-  // });
+  menuToggle();
+  carousel();
 
+});
 
+function menuToggle(){
   $('.menu-plate').on('click', function(e){
     e.stopPropagation();
   });
@@ -14,81 +13,59 @@ $(function(){
   $('.menu-close, header .menu-svg, .menu-overlay').on('click', function(){
     $('html').toggleClass('menu-open');
   });
+}
 
+function carousel(){
 
-});
+  var $carouselWrap = $('.carousel-wrap'),
+      $carouselUnits = $carouselWrap.find('.carousel-unit'),
+      unitCount = $carouselUnits.length,
+      tallestUnitHeight = getTallestUnitHeight(),
+      $carouselNav = $('.carousel-nav');
 
-function postContactToGoogle(f) {
+  function getTallestUnitHeight(){
+    var heights = [];
+    for (var i = 0; i < unitCount; i++) {
+      var height = $carouselUnits.eq(i).height();
+      heights.push(height);
+    }
+    var tallest = Math.max.apply(Math, heights);
+    return tallest;
+  }
 
-  var email = f.find('#email').val();
+  function initCarousel(){
+    $carouselUnits.height(tallestUnitHeight).first().addClass('is-current');
+    $carouselWrap.height(tallestUnitHeight);
+  }
+  initCarousel();
 
-  $.ajax({
-    url: "https://gumroad.com/follow_from_embed_form",
-    data: {
-      "2449985483245": email
-    },
-    type: "POST",
-    dataType: "xml",
-    statusCode: {
-      0: function() {
-        window.location.replace("/jquerycourse/thanks");
+  function nextTestimonial(){
+    if ($carouselUnits.filter('.is-current').index() < unitCount-1) {
+        $carouselUnits.filter('.is-current').next().addClass('is-current').siblings().removeClass('is-current');
+    }
+    else {
+      $carouselUnits.first().addClass('is-current').siblings().removeClass('is-current');
+    }
+  }
 
-      },
-      200: function() {
-        window.location.replace("/jquerycourse/thanks");
-      }
+  function prevTestimonial(){
+    if ($carouselUnits.filter('.is-current').index() === 0) {
+      $carouselUnits.last().addClass('is-current').siblings().removeClass('is-current');
+    }
+    else {
+      $carouselUnits.filter('.is-current').prev().addClass('is-current').siblings().removeClass('is-current');
+    }
+  }
+
+  var carouselInterval = setInterval(function(){ nextTestimonial() }, 4500);
+
+  $carouselNav.children('svg').on('click', function(){
+    clearInterval(carouselInterval);
+    if ($(this).index() === $carouselNav.length) {
+      nextTestimonial();
+    } else {
+      prevTestimonial();
     }
   });
-}
-
-function validate(f) {
-
-    // Place ID's of all required fields here.
-    var required = ["email"];
-    // If using an ID other than #email or #error then replace it here
-    //var email = f.find('.jquerycourse-email');
-    var errornotice = $("#error");
-    // The text to show up within a field when it is incorrect
-    var emptyerror = "Please type your name.";
-    var emailerror = "Please type a valid e-mail.";
-
-    //Validate required fields
-    for (i=0;i<required.length;i++) {
-      //var input = $(form +' #'+required[i]);
-      var input = f.find('#'+required[i]);
-
-      if ((input.val() == "") || (input.val() == emptyerror)) {
-        input.addClass("needsfilled");
-        input.val(emptyerror);
-        errornotice.fadeIn(750);
-      } else {
-        input.removeClass("needsfilled");
-      }
-    }
-    // Validate the e-mail.
-    if (!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email.val())) {
-      email.addClass("needsfilled");
-      email.val(emailerror);
-    }
-
-    // Clears any fields in the form when the user clicks on them
-    $(":input").focus(function(){
-       if ($(this).hasClass("needsfilled") ) {
-        $(this).val("");
-        $(this).removeClass("needsfilled");
-       }
-    });
-
-    //if any inputs on the page have the class 'needsfilled' the form will not submit
-    if ($(":input").hasClass("needsfilled")) {
-      return false;
-    } else {
-      errornotice.hide();
-      return true;
-    }
-
 
 }
-
-
-// timo, superhussain, tyrel

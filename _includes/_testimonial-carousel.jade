@@ -1,0 +1,22 @@
+mixin testimonial(img, name, words)
+  .carousel-unit.media-object
+    .media: img.avatar(src="#{img}")
+    .testimonial-words.content #{words}
+      div: cite &mdash; #{name}
+    
+
+.carousel-wrap
+  +testimonial(
+    '/assets/img/aleksi.jpg',
+    'Aleksi Älli',
+    'This is not fair. All the trouble that I\'ve faced trying to learn jQuery in my past and now you are making it so easy to understand. Thanks a lot Travis ... I want my spent hundreds of hours back.')
+  
+  +testimonial(
+    'https://yt3.ggpht.com/-oOjN-nQRUj8/AAAAAAAAAAI/AAAAAAAAAAA/0jeOKM_yY8Q/s48-c-k-no-rj-c0xffffff/photo.jpg',
+    'Yonder',
+    'Two weeks ago I said I need to learn jQuery and when I heard you are planning to make jQuery series, I stopped and waited for you. Thanks again man.﻿')
+    
+  +testimonial(
+    'https://yt3.ggpht.com/-5RoSkNBT5Co/AAAAAAAAAAI/AAAAAAAAAAA/531Kn-eUL1o/s48-c-k-no-rj-c0xffffff/photo.jpg',
+    'Jalil Tagizade',
+    'Finaaaaallllllyyyyyyyyy Trav, I\'ve been waitin for this for a long time﻿')
