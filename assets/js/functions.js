@@ -17,8 +17,7 @@ function menuToggle(){
 
 function carousel(){
 
-  var $testimonialSection = $('section.testimonials'),
-      $carouselWrap = $testimonialSection.find('.carousel-wrap'),
+  var $carouselWrap = $('.carousel-wrap'),
       $carouselUnits = $carouselWrap.find('.carousel-unit'),
       unitCount = $carouselUnits.length,
       tallestUnitHeight = getTallestUnitHeight(),
@@ -36,8 +35,7 @@ function carousel(){
 
   function initCarousel(){
     $carouselUnits.height(tallestUnitHeight).first().addClass('is-current');
-    var newSectionHeight = $testimonialSection.find('.constrainer').height() + tallestUnitHeight;
-    $testimonialSection.height(newSectionHeight);
+    $carouselWrap.height(tallestUnitHeight);
   }
   initCarousel();
 
@@ -62,9 +60,7 @@ function carousel(){
   var carouselInterval = setInterval(function(){ nextTestimonial() }, 4500);
 
   $carouselNav.children('svg').on('click', function(){
-
     clearInterval(carouselInterval);
-
     if ($(this).index() === $carouselNav.length) {
       nextTestimonial();
     } else {

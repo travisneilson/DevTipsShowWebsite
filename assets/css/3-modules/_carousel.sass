@@ -1,7 +1,12 @@
+section.testimonials
+  overflow: hidden
+
 .carousel-nav-wrap
   height: 30px
   margin-bottom: 20px
   position: relative
+
+
 
   &:after
     content: ''
@@ -27,18 +32,37 @@
 
 .carousel-wrap
   position: relative
+  margin-bottom: 20px
+
+  cite
+    color: #999
 
   .carousel-unit
-    margin-bottom: 40px
     opacity: 0
     position: absolute
     transform: translate(0px, 50px) scale(1.2)
     transition: all ease-in-out 500ms
+    pointer-events: none
 
     &.is-current
       opacity: 1
       transform: translate(0px, 0px) scale(1)
 
-
-  cite
-    color: #999
+  // .carousel-unit
+  //   position: absolute
+  //
+  //   .media
+  //     transform: translate(0px, 50px)
+  //     opacity: 0
+  //     transition: all ease-in-out 800ms 200ms
+  //
+  //   .testimonial-words
+  //     transform: translate(0px, 0px)
+  //     opacity: 0
+  //     transition: all ease-in-out 500ms
+  //
+  //   &.is-current
+  //     .media,
+  //     .testimonial-words
+  //       transform: translate(0px, 0px)
+  //       opacity: 1
