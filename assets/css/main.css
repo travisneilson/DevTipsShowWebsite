@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic);
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -366,48 +366,31 @@ body {
   font-size: 14px;
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
-  color: #666;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-<<<<<<< HEAD
-=======
-::selection {
-  background: #FFF498; }
-
-::-moz-selection {
-  background: #FFF498; }
-
-img::selection {
-  background: transparent; }
-
-img::-moz-selection {
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #FFF498; }
-
->>>>>>> parent of 56f2fe1... First huge push thing
 a {
-  color: #0074D9;
+  color: inherit;
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15); }
   a:hover, a:focus {
-<<<<<<< HEAD
     color: inherit;
     border-bottom-color: rgba(0, 0, 0, 0.3); }
   a.white, a.white-hard {
     border-bottom-color: rgba(255, 255, 255, 0.3); }
     a.white:hover, a.white:focus, a.white-hard:hover, a.white-hard:focus {
       color: white; }
-=======
-    color: #40a6ff; }
->>>>>>> parent of 56f2fe1... First huge push thing
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #222;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px; }
 
 .gigantic {
   font-size: 110px;
@@ -442,7 +425,8 @@ em {
   font-style: italic; }
 
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9); }
 
 hr {
   border: solid #ddd;
@@ -450,6 +434,54 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0; }
+  hr.section-title-rule {
+    border-top: 2px solid #F5E830;
+    width: 100px;
+    margin: 10px auto 30px; }
+    .tint-reversed hr.section-title-rule {
+      border-top-color: rgba(255, 255, 255, 0.2); }
+
+.section-head {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center; }
+
+.lead {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8); }
+
+.bold {
+  font-weight: 600; }
+
+.regular {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8); }
+
+.muted {
+  font-size: 13px;
+  font-style: italic; }
+
+.muted-extra {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5); }
+
+.blue {
+  color: #0067AF; }
+
+.black {
+  color: black; }
+
+.white {
+  color: rgba(255, 255, 255, 0.8); }
+
+.white-hard {
+  color: white; }
+
+.text-center {
+  text-align: center; }
 
 .text-right {
   text-align: right; }
@@ -460,15 +492,9 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  padding: 5px 20px;
   color: #555;
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -489,11 +515,10 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus {
-    color: #333;
+    color: inherit;
     border-color: #888;
     outline: 0; }
 
-<<<<<<< HEAD
 form {
   margin-bottom: 20px; }
 
@@ -518,8 +543,6 @@ input.needsfilled {
   border-color: #FF851B !important;
   color: #FF851B !important; }
 
-=======
->>>>>>> parent of 56f2fe1... First huge push thing
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -538,11 +561,8 @@ input.needsfilled {
   left: 0; }
 
 body {
-  margin: 10px;
-  background-color: #ddd;
-  overflow-x: hidden; }
+  position: relative; }
 
-<<<<<<< HEAD
 .top-rect {
   width: 100%;
   padding-top: 400px;
@@ -1069,7 +1089,3 @@ section.testimonials {
   margin: 0 auto; }
   .page-gifs .gif-cluster a {
     border: none; }
-=======
-.page-home {
-  text-align: center; }
->>>>>>> parent of 56f2fe1... First huge push thing
